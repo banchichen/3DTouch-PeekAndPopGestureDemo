@@ -31,7 +31,7 @@
     }
 }
 
-// 动态方式 创建shortcutItems 「已在info.plist里配置好。这是代码配置的示例。」
+/** 创建shortcutItems */
 - (void)configShortCutItems {
     NSMutableArray *shortcutItems = [NSMutableArray array];
     UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"1" localizedTitle:@"测试1"];
@@ -42,7 +42,7 @@
     [[UIApplication sharedApplication] setShortcutItems:shortcutItems];
 }
 
-// 处理shortcutItem
+/** 处理shortcutItem */
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     switch (shortcutItem.type.integerValue) {
         case 1: { // 测试1

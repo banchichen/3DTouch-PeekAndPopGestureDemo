@@ -20,21 +20,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>type</key>
-			<string>1</string>
-			<key>localizedTitle</key>
-			<string>测试1</string>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>2</string>
-			<key>localizedTitle</key>
-			<string>测试2</string>
-		</dict>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

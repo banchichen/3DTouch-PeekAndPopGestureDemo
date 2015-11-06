@@ -24,6 +24,13 @@
 
 @implementation ViewController
 
+/*
+ 实现peek和pop手势：
+ 1、遵守协议 UIViewControllerPreviewingDelegate
+ 2、注册    [self registerForPreviewingWithDelegate:self sourceView:self.view];
+ 3、实现代理方法
+ */
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 处理shortCutItem 通知
@@ -71,7 +78,7 @@
     [self presentViewController:testVc animated:YES completion:nil];
 }
 
-#pragma mark peek && pop
+#pragma mark peek && pop 代理方法
 
 /** peek手势  */
 - (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
